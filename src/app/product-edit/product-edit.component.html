@@ -1,0 +1,12 @@
+<div>
+  <h2>Product Edit</h2>
+  <div>
+    <label>Product Name:
+      <input [(ngModel)]="productData.name" placeholder="Stock Name" readonly/>
+    </label><br>
+    <label>Product Price:
+      <input [(ngModel)]="productData.currentPrice" placeholder="Stock Price"/>
+    </label><br>
+  </div>
+  <button (click)="updateProduct()">Update</button>
+</div>

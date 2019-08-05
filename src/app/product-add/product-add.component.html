@@ -1,0 +1,12 @@
+<div>
+  <h2>Stock Add</h2>
+  <div>
+    <label>Stock Name:
+      <input [(ngModel)]="productData.name" placeholder="Stock Name"/>
+    </label><br>
+    <label>Stock Price:
+      <input [(ngModel)]="productData.currentPrice" placeholder="Stock Price"/>
+    </label><br>
+  </div>
+  <button (click)="addProduct()">Save</button>
+</div>

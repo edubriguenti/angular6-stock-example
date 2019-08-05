@@ -1,0 +1,10 @@
+<div *ngIf="product" class="products">
+  <h2>{{product.name | uppercase}} Details</h2>
+  <div><span>Current price: </span>{{product.currentPrice}}</div>
+  <div><span>Last update: </span>{{product.lastUpdate | date :'dd-MM-yyyy hh:mm:ss a'}}</div>
+  <div>
+    <button routerLink="/product-edit/{{product.id}}">
+      Edit
+    </button>
+  </div>
+</div>
